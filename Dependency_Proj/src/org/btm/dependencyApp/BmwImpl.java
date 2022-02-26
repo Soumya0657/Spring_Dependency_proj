@@ -1,0 +1,57 @@
+package org.btm.dependencyApp;
+
+import java.util.List;
+
+public class BmwImpl implements Icar
+{
+public BmwImpl() {
+	System.out.println("BMW implementation object created");
+}
+private int id ;
+private String color;
+private Engine engine;
+private List<String>wheels;
+
+	public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+
+public String getColor() {
+	return color;
+}
+
+public void setColor(String color) {
+	this.color = color;
+}
+
+public Engine getEngine() {
+	return engine;
+}
+
+public void setEngine(Engine engine) {
+	this.engine = engine;
+}
+
+public List<String> getWheels() {
+	return wheels;
+}
+
+public void setWheels(List<String> wheels) {
+	this.wheels = wheels;
+}
+
+	@Override
+	public void drive() {
+		System.out.println("BMW DETAIL BELOW");
+		System.out.println("BMW  ID "+getId());
+		System.out.println("BME color"+getColor());
+		System.out.println("BME engine"+getEngine());
+		System.out.println("BME wheels"+getWheels());
+		System.out.println("BMW driben broom");
+	}
+
+}
